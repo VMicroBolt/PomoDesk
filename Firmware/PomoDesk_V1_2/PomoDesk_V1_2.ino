@@ -41,15 +41,15 @@ Preferences prefs;
 bool configMode = false;
 
 // --- Defaults ---
-extern const uint32_t WORK_MS_DEFAULT     = 45UL * 60UL * 1000UL;
-extern const uint32_t BREAK_MS_DEFAULT    = 5UL  * 60UL * 1000UL;
-extern const uint32_t IDLE_LED_MS_DEFAULT = 10UL * 60UL * 1000UL;
+extern const uint32_t WORK_MS_DEFAULT     = 45UL * 60UL * 1000UL;   // 45 mins
+extern const uint32_t BREAK_MS_DEFAULT    = 5UL  * 60UL * 1000UL;   //  5 mins
+extern const uint32_t IDLE_LED_MS_DEFAULT = 10UL * 60UL * 1000UL;   // 10 mins
 
-extern const uint32_t BREATH_TIME_MS = 800;
-extern const uint32_t BREATH_PHASE_MS = 4000;
+extern const uint32_t BREATH_TIME_MS = 300;       // 0.3 secs
+extern const uint32_t BREATH_PHASE_MS = 4000;     //   4 secs
 
-extern const uint32_t CONFIG_TIME_MS = 2000;
-extern const uint32_t OFF_TIME_MS    = 3500;
+extern const uint32_t CONFIG_TIME_MS = 1200;      // 1.2 secs
+extern const uint32_t OFF_TIME_MS    = 3000;      //   3 secs
 
 extern const uint32_t DEFAULT_IDLE_RAW   = 0xFF5000;
 extern const uint32_t DEFAULT_WORK_RAW   = 0x00FF00;
@@ -58,21 +58,27 @@ extern const uint32_t DEFAULT_CONFIG_RAW = 0x0078FF;
 extern const uint32_t DEFAULT_BREATH_RAW = 0x0000FF;
 
 // --- Settings ---
+uint32_t stateStartMs = 0;
 uint32_t workMs;
 uint32_t breakMs;
 uint32_t idleLedMs;
 uint8_t brightness = 150;
+bool idleLedsOff = false;
 
 // --- Transitions ---
+//   SET_RING,
+//   RUNNING_LIGHT,
+//   RUNNING_FILL,
+//   RUNNING_LIGHT_CLEAR,
+//   FADE
 Transition transition = RUNNING_FILL;
 uint16_t transitionDelayMs = 40;
 
 // --- States ---
-State state = IDLE;
+//   BREATH_LINEAR,
+//   BREATH_CENTER_SPLIT
 BreathingStyle breathingStyle = BREATH_CENTER_SPLIT;
-
-uint32_t stateStartMs = 0;
-bool idleLedsOff = false;
+State state = IDLE;
 
 // --- Colors ---
 uint32_t COLOR_IDLE;
@@ -106,6 +112,10 @@ uint32_t hexToColor(String hex) {
   return rawToNeo(value);
 }
 
+uint8_t ledMap(uint8_t logicalIndex) {
+  return (logicalIndex + 17) % NUM_LEDS;
+}
+
 uint16_t transitionDelay() {
   return constrain(transitionDelayMs, 5, 500);
 }
@@ -133,9 +143,11 @@ void runningLights(uint32_t color) {
 
   for (int i = 0; i < NUM_LEDS; i++) {
     strip.clear();
-    strip.setPixelColor(i, color);
-    strip.setPixelColor((i - 1 + NUM_LEDS) % NUM_LEDS, color);
-    strip.setPixelColor((i - 2 + NUM_LEDS) % NUM_LEDS, color);
+
+    strip.setPixelColor(ledMap(i), color);
+    strip.setPixelColor(ledMap((i - 1 + NUM_LEDS) % NUM_LEDS), color);
+    strip.setPixelColor(ledMap((i - 2 + NUM_LEDS) % NUM_LEDS), color);
+
     strip.show();
     delay(transitionDelay());
   }
@@ -147,7 +159,7 @@ void runningFill(uint32_t color) {
   allLedsOff();
 
   for (int i = 0; i < NUM_LEDS; i++) {
-    strip.setPixelColor(i, color);
+    strip.setPixelColor(ledMap(i), color);
     strip.show();
     delay(transitionDelay());
   }
@@ -160,16 +172,12 @@ void runningFillClear(uint32_t color) {
   delay(transitionDelay());
 
   for (int i = 0; i < NUM_LEDS; i++) {
-    strip.setPixelColor(i, 0);
+    strip.setPixelColor(ledMap(i), 0);
     strip.show();
     delay(transitionDelay());
   }
 
   currentColor = 0;
-}
-
-uint8_t blend8(uint8_t from, uint8_t to, uint8_t step, uint8_t steps) {
-  return from + ((int16_t)(to - from) * step) / steps;
 }
 
 void fadeToColor(uint32_t targetColor) {
@@ -191,7 +199,7 @@ void fadeToColor(uint32_t targetColor) {
     );
 
     for (int i = 0; i < NUM_LEDS; i++) {
-      strip.setPixelColor(i, c);
+      strip.setPixelColor(ledMap(i), c);
     }
 
     strip.show();
@@ -199,6 +207,10 @@ void fadeToColor(uint32_t targetColor) {
   }
 
   currentColor = targetColor;
+}
+
+uint8_t blend8(uint8_t from, uint8_t to, uint8_t step, uint8_t steps) {
+  return from + ((int16_t)(to - from) * step) / steps;
 }
 
 uint32_t scaleColor(uint32_t color, uint8_t amount) {
@@ -362,7 +374,12 @@ void loadSettings() {
 
   brightness = prefs.getUChar("bright", 150);
   transitionDelayMs = prefs.getUShort("delay", 40);
-  transition = (Transition)prefs.getUChar("trans", RUNNING_FILL);
+
+  bool transitionWasSaved = prefs.getBool("transSaved", false);
+
+  if (transitionWasSaved) {
+    transition = (Transition)prefs.getUChar("trans", transition);
+  }
 
   COLOR_IDLE   = prefs.getUInt("idleColor", rawToNeo(DEFAULT_IDLE_RAW));
   COLOR_WORK   = prefs.getUInt("workColor", rawToNeo(DEFAULT_WORK_RAW));
@@ -382,7 +399,9 @@ void saveSettings() {
 
   prefs.putUChar("bright", brightness);
   prefs.putUShort("delay", transitionDelayMs);
+
   prefs.putUChar("trans", transition);
+  prefs.putBool("transSaved", true);
 
   prefs.putUInt("idleColor", COLOR_IDLE);
   prefs.putUInt("workColor", COLOR_WORK);
