@@ -74,14 +74,16 @@ After flashing, the device will boot directly into the **Idle** state and is rea
 - Adjustable Focus, Break, and Idle times
 - Adjustable transition speed
 - Brightness control with ECO mode
+- RGB cycle mode
 - Local Wi-Fi configuration portal
 - Deep sleep mode with button wake-up
 
 ## Controls
 
 - Short press: step through states
-- Hold 1.5 seconds: enter or exit config mode
-- Hold 3 seconds: go to sleep
+- Hold 1.5 seconds, release: enter or exit config mode
+- Hold 3 seconds, release: toggle RGB cycle mode
+- Hold 6 seconds, release: go to sleep
 
 ## States
 

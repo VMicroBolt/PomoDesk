@@ -1,0 +1,2 @@
+source /Users/joris/Projects/PomoDesk/ESP IDF/build/gdbinit/symbols
+source /Users/joris/Projects/PomoDesk/ESP IDF/build/gdbinit/connect

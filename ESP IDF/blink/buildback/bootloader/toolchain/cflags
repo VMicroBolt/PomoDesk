@@ -1,0 +1,5 @@
+"-specs=/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/specs/picolibc.specs"
+-mlongcalls
+-fno-builtin-memcpy
+-fno-builtin-memset
+-fno-builtin-bzero

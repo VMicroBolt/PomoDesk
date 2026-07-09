@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "blink",
+			"path": "ESP IDF/blink"
+		},
+		{
+			"name": "PomoDesk",
+			"path": "."
+		}
+	],
+	"settings": {
+		"stm32cube-ide-clangd.path": "cube"
+	}
+}

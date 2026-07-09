@@ -65,8 +65,9 @@ By pressing and holding the button, PomoDesk can start its own Wi-Fi configurati
 <img width="1774" height="887" alt="WhatsApp Image 2026-05-31 at 11 31 27" src="https://github.com/user-attachments/assets/a8e5a4d2-66d4-4e88-baff-9ad13a10f955" />
 
 * Short press: step through states
-* Hold 1.5 seconds: enter or exit config mode
-* Hold 3 seconds: go to sleep
+* Hold 1.5 seconds, release: enter or exit config mode
+* Hold 3 seconds, release: toggle RGB cycle mode
+* Hold 6 seconds, release: go to sleep
 
 ### Config mode
 
@@ -86,6 +87,7 @@ Fallback: http://10.10.10.1
 * Multiple LED transition modes
 * Adjustable transition speed
 * Brightness control
+* RGB cycle mode
 * ECO brightness mode
 * Reset to default settings
 * Config mode with blue LED indication

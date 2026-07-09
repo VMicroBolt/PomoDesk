@@ -1,0 +1,243 @@
+# ninja log v6
+3012	3058	1781203821655177216	esp-idf/xtensa/libxtensa.a	7f293f553dd62660
+4	4852	1781204293930070213	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esptool_py/cmake_install.cmake	b849c01caa4705c8
+1908	1955	1781203820551036520	esp-idf/esp_hal_uart/libesp_hal_uart.a	565b87eecd3948ff
+1087	1145	1781203819729992780	esp-idf/efuse/libefuse.a	b99d2220119fd384
+1527	1601	1781203820170655001	esp-idf/esp_hal_gpio/CMakeFiles/__idf_esp_hal_gpio.dir/gpio_hal.c.obj	a1774d8a5af418c4
+2450	2512	1781203821093259085	esp-idf/micro-ecc/libmicro-ecc.a	f0d683064d320574
+1185	1260	1781203819827764722	esp-idf/esp_hal_timg/CMakeFiles/__idf_esp_hal_timg.dir/timer_hal.c.obj	4e91bda3ea5bea78
+2914	2962	1781203821557323107	esp-idf/hal/libhal.a	aeddc4273de37ab5
+1554	1611	1781203820196745655	esp-idf/esp_hal_gpio/CMakeFiles/__idf_esp_hal_gpio.dir/esp32s3/dedic_gpio_periph.c.obj	1c7d43b7f25cbbfb
+5	77	1781204110905521708	CMakeFiles/bootloader_check_size	2ddc4ce1169b880f
+1084	1496	1781203819726960008	esp-idf/esp_hal_uart/CMakeFiles/__idf_esp_hal_uart.dir/uart_hal.c.obj	fc49c893b911e3ec
+238	869	1781203818881446043	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_init.c.obj	c418ff7b15dff97a
+871	948	1781203819514206204	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/esp32s3/bootloader_soc.c.obj	3c7c1177b98bbf01
+5	77	1781204110905521708	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/CMakeFiles/bootloader_check_size	2ddc4ce1169b880f
+1291	1367	1781203819933725641	esp-idf/esp_hal_gpspi/CMakeFiles/__idf_esp_hal_gpspi.dir/spi_slave_hal.c.obj	778aa9c11a145bce
+4	4852	1781204293945353132	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_rom/cmake_install.cmake	b849c01caa4705c8
+1582	1628	1781203820225356245	esp-idf/esp_hal_gpio/CMakeFiles/__idf_esp_hal_gpio.dir/esp32s3/sdm_periph.c.obj	1ee53f799dfe002e
+1997	2035	1781203820640040812	esp-idf/esp_hal_timg/libesp_hal_timg.a	726f9428d026da75
+3058	3098	1781203821700836058	esp-idf/main/libmain.a	290b396306a99863
+2962	3012	1781203821605537593	esp-idf/soc/libsoc.a	dbb63d8562ee7a19
+2592	2627	1781203821235588111	esp-idf/esp_hal_clock/libesp_hal_clock.a	6d0edd59c44c3139
+1752	1789	1781203820395421686	esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/eri.c.obj	9c9b59df44c1ba01
+3098	3168	1781203821740839941	bootloader.elf	bbbfff6cb0c7bb8c
+2726	2781	1781203821368877235	esp-idf/esp_hal_pmu/libesp_hal_pmu.a	b4cfcb6fcac10551
+1431	1582	1781203820074147653	esp-idf/esp_hal_pmu/CMakeFiles/__idf_esp_hal_pmu.dir/esp32s3/rtc_cntl_hal.c.obj	836937da0d005ba3
+1537	1676	1781203820180064572	esp-idf/esp_hal_gpio/CMakeFiles/__idf_esp_hal_gpio.dir/rtc_io_hal.c.obj	8080f9f613022c7c
+230	302	1781203818873516984	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk_init.c.obj	e9df39d7dfb274fd
+4	4852	1781204293950057616	build.ninja	b849c01caa4705c8
+1718	1757	1781203820360794052	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/gpio_periph.c.obj	fef01b377c5d9087
+2781	2866	1781203821424498736	esp-idf/esp_hal_usb/libesp_hal_usb.a	a8e9721eab35953f
+1496	1554	1781203820138981180	esp-idf/esp_hal_usb/CMakeFiles/__idf_esp_hal_usb.dir/usb_serial_jtag_hal.c.obj	f248d7e3ab684565
+1016	1087	1781203819659037082	esp-idf/esp_system/libesp_system.a	7e2293ec48732946
+1269	1904	1781203819912200563	esp-idf/esp_hal_gpspi/CMakeFiles/__idf_esp_hal_gpspi.dir/spi_hal_iram.c.obj	415fe7595db5acf2
+646	1224	1781203819289301268	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/bootloader_flash.c.obj	f6898827ae1246bd
+10	143	1781203818653396375	esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/log_timestamp.c.obj	1fced7360a0c6729
+1679	1774	1781203820322150012	esp-idf/bootloader_support/libbootloader_support.a	82fd058f15516795
+4	4852	1781204293942410198	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_hw_support/cmake_install.cmake	b849c01caa4705c8
+1720	1758	1781203820362791692	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/power_supply_periph.c.obj	52971c9280abea84
+761	830	1781203819404249879	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/flash_partitions.c.obj	cde89b653b0e5810
+4	4852	1781204293940941107	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_system/cmake_install.cmake	b849c01caa4705c8
+1552	1599	1781203820195349686	esp-idf/esp_hal_gpio/CMakeFiles/__idf_esp_hal_gpio.dir/esp32s3/rtc_io_periph.c.obj	8153dbe0b7004d67
+1611	1764	1781203820254480255	esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32s3/efuse_hal.c.obj	81d4d1f80f0564b6
+1627	1834	1781203820270317415	esp-idf/hal/CMakeFiles/__idf_hal.dir/mmu_hal.c.obj	a80a22b99c554af3
+4	4852	1781204293938748803	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/bootloader_support/cmake_install.cmake	b849c01caa4705c8
+870	936	1781203819512667859	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_console_loader.c.obj	95086df34d44382
+902	915	1781120191184880370	project_elf_src_esp32s3.c	e3bed6f52db9c10f
+874	1101	1781203819517503062	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/esp32s3/bootloader_esp32s3.c.obj	c91d164d212d5881
+989	1218	1781203819632175172	esp-idf/esp_hal_ana_conv/CMakeFiles/__idf_esp_hal_ana_conv.dir/adc_hal_common.c.obj	3c0e735fe807f51c
+2549	2592	1781203821191911742	esp-idf/spi_flash/libspi_flash.a	17ebb49bd6299eb6
+280	365	1781203818923226315	esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_err.c.obj	4df9ab30a349f3a2
+1205	1291	1781203819848483711	esp-idf/esp_hal_timg/CMakeFiles/__idf_esp_hal_timg.dir/esp32s3/timer_periph.c.obj	aefbd5b2c46962f9
+1086	1207	1781203819728942564	esp-idf/esp_hal_uart/CMakeFiles/__idf_esp_hal_uart.dir/uart_hal_iram.c.obj	39651e27d279346f
+4	4852	1781204293929955004	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/partition_table/cmake_install.cmake	b849c01caa4705c8
+1145	1205	1781203819788471219	esp-idf/esp_hal_wdt/CMakeFiles/__idf_esp_hal_wdt.dir/rom_patch.c.obj	7da1301bd4c054a4
+1158	1243	1781203819801656193	esp-idf/esp_hal_wdt/CMakeFiles/__idf_esp_hal_wdt.dir/xt_wdt_hal.c.obj	c93e1916934fe7ed
+302	449	1781203818945512107	esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s3/esp_efuse_fields.c.obj	a4f47e64f3841860
+1432	1486	1781203820074920075	esp-idf/esp_hal_pmu/CMakeFiles/__idf_esp_hal_pmu.dir/brownout_hal.c.obj	a82e7987359bbec8
+643	946	1781203819286395871	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_random_esp32s3.c.obj	3c98b6b11ca8af06
+863	924	1781203819506003476	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_clock_loader.c.obj	1b5babbec7ba3051
+16	133	1781203818659620296	esp-idf/log/CMakeFiles/__idf_log.dir/src/log_format_text.c.obj	195c8664ad86226e
+639	725	1781203819282609593	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/secure_boot.c.obj	aad9144811d3d0ee
+953	1016	1781203819596225361	esp-idf/esp_hw_support/libesp_hw_support.a	de2d9742253eb003
+1367	1432	1781203820010663677	esp-idf/esp_hal_dma/CMakeFiles/__idf_esp_hal_dma.dir/gdma_hal_top.c.obj	e13af2eab08a0189
+551	595	1781203819193690468	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_mem.c.obj	a3d55f12557d9afe
+1143	1185	1781203819786527079	esp-idf/esp_hal_uart/CMakeFiles/__idf_esp_hal_uart.dir/uhci_hal.c.obj	5c5333ab9b9f9c81
+902	915	1781120191184880370	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/project_elf_src_esp32s3.c	e3bed6f52db9c10f
+612	863	1781203819255491889	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/flash_encrypt.c.obj	ab9cdd1b45f589af
+449	761	1781203819092122248	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_common.c.obj	acf45d784566ff63
+12	95	1781203818654861469	esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/log_lock.c.obj	8151c7175825de50
+1224	1431	1781203819867312977	esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_wrap.c.obj	191c02496bf6ab79
+797	865	1781203819440177649	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_sha.c.obj	408cb2b7f873c3ad
+168	280	1781203818810729513	esp-idf/log/liblog.a	71324163a7e99e72
+301	363	1781203818944006845	esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s3/esp_efuse_table.c.obj	961a99b38f6fef42
+592	663	1781203819235062611	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_random.c.obj	5a7d32c8e60d2449
+1260	1318	1781203819902743034	esp-idf/esp_hal_gpspi/CMakeFiles/__idf_esp_hal_gpspi.dir/esp32s3/spi_periph.c.obj	3adee60165113704
+991	1261	1781203819634464147	esp-idf/esp_hal_ana_conv/CMakeFiles/__idf_esp_hal_ana_conv.dir/adc_oneshot_hal.c.obj	61e3e669e5759229
+13	143	1781203818656490398	esp-idf/log/CMakeFiles/__idf_log.dir/src/buffer/log_buffers.c.obj	c5d95e0d54a0f3c8
+1730	1772	1781203820410689801	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/ld/bootloader.ld	8e94f3555db15b16
+830	1319	1781203819472843477	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_init.c.obj	712c6707b34f889a
+1318	1576	1781203819961359099	esp-idf/esp_hal_gpspi/CMakeFiles/__idf_esp_hal_gpspi.dir/spi_slave_hal_iram.c.obj	12f4394e84fa603
+1772	1814	1781203820415181835	esp-idf/main/CMakeFiles/__idf_main.dir/bootloader_start.c.obj	2ab568ea9010a96e
+416	874	1781203819058957457	esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/efuse_controller/keys/with_key_purposes/esp_efuse_api_key.c.obj	239857aed26fdb6
+364	551	1781203819007274403	esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_fields.c.obj	f577dde839841e96
+865	994	1781203819508146950	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_console.c.obj	b8f2bfce2bc7af65
+23	393	1781203818666353805	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_print.c.obj	b0611cef49805997
+331	612	1781203818974608783	esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s3/esp_efuse_utility.c.obj	3fb6caaccd32c1f8
+393	467	1781203819035801909	esp-idf/esp_rom/libesp_rom.a	9559f071a9a571d8
+1680	1717	1781203820323370063	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/interrupts.c.obj	fcbed8fe6d54f531
+212	306	1781203818855496557	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/cpu_region_protect.c.obj	6fe70079e30e0812
+306	508	1781203818949605804	esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s3/esp_efuse_rtc_calib.c.obj	667eb548a6d46045
+508	773	1781203819150719395	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_common_loader.c.obj	bbf1eb9072dd278f
+3168	3325	1781203821967675934	.bin_timestamp	c137aef675ef56a6
+4	4852	1781204293927837409	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_hal_clock/cmake_install.cmake	b849c01caa4705c8
+208	275	1781203818851267817	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/esp_memory_utils.c.obj	2c352d4960ef2d02
+1601	1677	1781203820244345637	esp-idf/hal/CMakeFiles/__idf_hal.dir/efuse_hal.c.obj	8855bb99b43d1272
+133	208	1781203818775795042	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_longjmp.S.obj	d280fd6c1b15d758
+1261	1494	1781203819904233753	esp-idf/esp_hal_gpspi/CMakeFiles/__idf_esp_hal_gpspi.dir/spi_hal.c.obj	c4f5e0db7643be51
+143	238	1781203818785821243	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_systimer.c.obj	335e3d555bebad44
+251	639	1781203818894411515	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_time.c.obj	7976a2ad971c68f8
+916	941	1781120191187140649	CMakeFiles/bootloader.elf.dir/project_elf_src_esp32s3.c.obj	67e9edc2a7e7cfe0
+131	213	1781203818774381282	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_gpio.c.obj	5fdef10617a679b9
+1628	1818	1781203820271020004	esp-idf/hal/CMakeFiles/__idf_hal.dir/cache_hal.c.obj	3a7a371b2b1fcb1d
+275	364	1781203818918061109	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/chip_info.c.obj	8885975dba335c42
+924	1016	1781203819567180810	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_panic.c.obj	137e139a28d94c84
+1404	1680	1781203820046924448	esp-idf/esp_hal_dma/CMakeFiles/__idf_esp_hal_dma.dir/gdma_hal_ahb_v1.c.obj	8efb5df3e59c1fc1
+143	251	1781203818786137162	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_cache_esp32s2_esp32s3.c.obj	a59f2097f6e97c3e
+4	4852	1781204293943887957	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_common/cmake_install.cmake	b849c01caa4705c8
+85	207	1781203818728314603	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_spiflash.c.obj	af4bc276fea3fb22
+213	953	1781203818855838476	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk.c.obj	abf757d98740e94
+4	4852	1781204293934742114	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_hal_rtc_timer/cmake_install.cmake	b849c01caa4705c8
+1758	1803	1781203820400691768	esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/xt_trax.c.obj	50f6d2c52ed23100
+1319	1959	1781203819961888811	esp-idf/esp_hal_gpspi/CMakeFiles/__idf_esp_hal_gpspi.dir/spi_slave_hd_hal.c.obj	5f1a6be477ce8868
+2627	2684	1781203821269879993	esp-idf/esp_hal_gpspi/libesp_hal_gpspi.a	3f8fdb33793bd84c
+4	4852	1781204293924484181	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_hal_usb/cmake_install.cmake	b849c01caa4705c8
+95	212	1781203818738420804	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_efuse.c.obj	c026381948b52a6f
+1719	1752	1781203820362291271	esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/mpi_periph.c.obj	1a2918ce298a0197
+1774	1816	1781203820416836055	esp-idf/esp_security/libesp_security.a	5f398e420e8379aa
+1207	2450	1781203819850521476	esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/uECC_verify_antifault.c.obj	ef75bf9a2de3ec3c
+150	230	1781203818793111089	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_cache_writeback_esp32s3.S.obj	ea68d76ca098c341
+1218	1269	1781203819861090180	esp-idf/esp_bootloader_format/CMakeFiles/__idf_esp_bootloader_format.dir/esp_bootloader_desc.c.obj	c4a437164b9070cb
+994	1404	1781203819637279044	esp-idf/esp_hal_ana_conv/CMakeFiles/__idf_esp_hal_ana_conv.dir/adc_hal.c.obj	aefc3537341ed17d
+4	4852	1781204293923593176	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_hal_gpio/cmake_install.cmake	b849c01caa4705c8
+3168	3325	1781203821967675934	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/.bin_timestamp	c137aef675ef56a6
+15	162	1781203818657928325	esp-idf/log/CMakeFiles/__idf_log.dir/src/util.c.obj	870280ace8c90900
+4	4852	1781204293934523363	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_hal_ana_conv/cmake_install.cmake	b849c01caa4705c8
+595	646	1781203819238197135	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_efuse.c.obj	3df466bfcc610f6
+1730	1772	1781203820410689801	ld/bootloader.ld	8e94f3555db15b16
+527	592	1781203819169692913	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_clock_init.c.obj	273e0d4f2d32f44d
+1016	1086	1781203819658799080	esp-idf/esp_hal_ana_conv/CMakeFiles/__idf_esp_hal_ana_conv.dir/esp32s3/temperature_sensor_periph.c.obj	f750516d9a0090a
+467	527	1781203819110485885	esp-idf/esp_common/libesp_common.a	7c389409056ae05a
+1852	1908	1781203820495108850	esp-idf/esp_hal_ana_conv/libesp_hal_ana_conv.a	d8a13d1747e62279
+4	4852	1781204293946824515	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/freertos/cmake_install.cmake	b849c01caa4705c8
+21	165	1781203818664093288	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_sys.c.obj	ea4d684eba0ead7f
+4	4852	1781204293926120024	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_hal_dma/cmake_install.cmake	b849c01caa4705c8
+936	1084	1781203819579128149	esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/esp_crypto_periph_clk.c.obj	4d24a5a5bb7f7eb2
+4	4852	1781204293936397748	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_security/cmake_install.cmake	b849c01caa4705c8
+1677	1719	1781203820319742161	esp-idf/soc/CMakeFiles/__idf_soc.dir/dport_access_common.c.obj	4f696dfccef5684a
+165	416	1781203818808302953	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/cpu.c.obj	39526f09d87aad4e
+365	871	1781203819008184827	esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_utility.c.obj	6165adcc28dedf60
+4	4852	1781204293928847498	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/spi_flash/cmake_install.cmake	b849c01caa4705c8
+1395	1440	1781203820038590344	esp-idf/esp_hal_dma/CMakeFiles/__idf_esp_hal_dma.dir/esp32s3/gdma_periph.c.obj	507ae1cae572a6fb
+1440	1934	1781203820083604973	esp-idf/esp_hal_usb/CMakeFiles/__idf_esp_hal_usb.dir/usb_dwc_hal.c.obj	c2e77faac5c62f5a
+4	4852	1781204293922601754	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/hal/cmake_install.cmake	b849c01caa4705c8
+1955	1997	1781203820598073872	esp-idf/esp_hal_wdt/libesp_hal_wdt.a	e500d00ea1b42318
+999	1143	1781203819642629209	esp-idf/esp_hal_ana_conv/CMakeFiles/__idf_esp_hal_ana_conv.dir/temperature_sensor_hal.c.obj	c8eaadac59e5edb1
+1599	1720	1781203820242384122	esp-idf/hal/CMakeFiles/__idf_hal.dir/hal_utils.c.obj	b0063eecb9d64e67
+4	4852	1781204293935546493	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_hal_security/cmake_install.cmake	b849c01caa4705c8
+4	4852	1781204293927097696	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_hal_gpspi/cmake_install.cmake	b849c01caa4705c8
+162	301	1781203818805319847	esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/esp_err_to_name.c.obj	3058c11f57b6bee4
+2684	2726	1781203821326772961	esp-idf/esp_hal_dma/libesp_hal_dma.a	233e6000a8b82045
+1676	1730	1781203820319342658	esp-idf/soc/CMakeFiles/__idf_soc.dir/lldesc.c.obj	b17407c5cbb2ecd4
+207	331	1781203818849831389	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_cpu_intr.c.obj	4f7d86bdf1582169
+11	85	1781203818654147255	esp-idf/log/CMakeFiles/__idf_log.dir/src/log_timestamp_common.c.obj	7d97350d97faaf1
+725	1527	1781203819368199693	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_utility.c.obj	a27b93f0a54473c0
+948	999	1781203819591012905	esp-idf/esp_hal_ana_conv/CMakeFiles/__idf_esp_hal_ana_conv.dir/esp32s3/adc_periph.c.obj	618007ad45a4b727
+4	4852	1781204293930801008	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/micro-ecc/cmake_install.cmake	b849c01caa4705c8
+946	991	1781203819588838139	esp-idf/esp_hal_security/CMakeFiles/__idf_esp_hal_security.dir/mpu_hal.c.obj	6898667e4dede2e9
+4	4852	1781204293942666825	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_hw_support/port/esp32s3/cmake_install.cmake	b849c01caa4705c8
+577	605	1781120190848131909	esp-idf/esp_hal_wdt/CMakeFiles/__idf_esp_hal_wdt.dir/esp32s3/mwdt_periph.c.obj	c4996c343926063c
+4	4852	1781204293920511284	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_libc/cmake_install.cmake	b849c01caa4705c8
+1576	1627	1781203820219436200	esp-idf/esp_hal_gpio/CMakeFiles/__idf_esp_hal_gpio.dir/sdm_hal.c.obj	61eca0e2db90abf0
+27	247	1781203818670293918	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_serial_output.c.obj	b8a9ba55001c2dec
+21	131	1781203818663957162	esp-idf/log/CMakeFiles/__idf_log.dir/src/log.c.obj	df95d1ca87176b6e
+4	4852	1781204293928081285	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_blockdev/cmake_install.cmake	b849c01caa4705c8
+4	4852	1781204293933529649	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_hal_uart/cmake_install.cmake	b849c01caa4705c8
+1243	1395	1781203819886194743	esp-idf/esp_hal_clock/CMakeFiles/__idf_esp_hal_clock.dir/esp32s3/clk_tree_hal.c.obj	8a3ff9ac4a364d05
+4	4852	1781204293932576477	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_hal_wdt/cmake_install.cmake	b849c01caa4705c8
+1494	1537	1781203820137491711	esp-idf/esp_hal_usb/CMakeFiles/__idf_esp_hal_usb.dir/esp32s3/usb_dwc_periph.c.obj	60765e7dc618e4e9
+23	150	1781203818666647224	esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_crc.c.obj	c9b64c33c7f3ea60
+5	52	1781120190275934722	esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/util.c.obj	6dc1ab53f645070c
+1816	1852	1781203820459403249	esp-idf/esp_hal_security/libesp_hal_security.a	e2f9074ce0656a2f
+4	4852	1781204293919181318	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/cmake_install.cmake	b849c01caa4705c8
+2866	2914	1781203821508950786	esp-idf/esp_hal_gpio/libesp_hal_gpio.a	bdd0485be3c13d02
+2512	2548	1781203821154937506	esp-idf/esp_bootloader_format/libesp_bootloader_format.a	8ea81634aacad207
+1101	1158	1781203819744051677	esp-idf/esp_hal_uart/CMakeFiles/__idf_esp_hal_uart.dir/esp32s3/uart_periph.c.obj	b8bbd42e1ccaec8c
+247	643	1781203818890554236	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_sleep.c.obj	6b49d632f458cce9
+20	168	1781203818663033155	esp-idf/log/CMakeFiles/__idf_log.dir/src/log_print.c.obj	8712e732f204c2ba
+4	4852	1781204293946703639	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_stdio/cmake_install.cmake	b849c01caa4705c8
+4	4852	1781204293918818691	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/cmake_install.cmake	b849c01caa4705c8
+4	4852	1781204293942835868	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_hw_support/mspi_timing_tuning/port/esp32s3/cmake_install.cmake	b849c01caa4705c8
+4	4852	1781204293940136769	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/efuse/cmake_install.cmake	b849c01caa4705c8
+932	989	1781203819575217203	esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/esp_crypto_lock.c.obj	7db5a1df3406996
+4	4852	1781204293929643252	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_bootloader_format/cmake_install.cmake	b849c01caa4705c8
+662	932	1781203819305105428	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/flash_qio_mode.c.obj	c7617efe37aa402a
+663	797	1781203819306095185	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/bootloader_flash_config_esp32s3.c.obj	32146ad5f0d05e98
+1486	1552	1781203820128994897	esp-idf/esp_hal_usb/CMakeFiles/__idf_esp_hal_usb.dir/usb_wrap_hal.c.obj	9321a4fc7293746a
+4	4852	1781204293921605207	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/soc/cmake_install.cmake	b849c01caa4705c8
+4	4852	1781204293925315353	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_hal_pmu/cmake_install.cmake	b849c01caa4705c8
+4	4852	1781204293947619603	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/main/cmake_install.cmake	b849c01caa4705c8
+773	1679	1781203819416418638	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/esp_image_format.c.obj	84fd608d5137d0f9
+4	4852	1781204293929832711	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_app_format/cmake_install.cmake	b849c01caa4705c8
+363	662	1781203819006335604	esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_api.c.obj	65f92f853d12a1a3
+4	4852	1781204293927961201	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_hal_mspi/cmake_install.cmake	b849c01caa4705c8
+4	4852	1781204293946583847	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/bootloader/cmake_install.cmake	b849c01caa4705c8
+4	4852	1781204293920368867	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/xtensa/cmake_install.cmake	b849c01caa4705c8
+4	4852	1781204293946453429	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/log/cmake_install.cmake	b849c01caa4705c8
+4	4852	1781204293942983785	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_hw_support/lowpower/cmake_install.cmake	b849c01caa4705c8
+4	4852	1781204293931569305	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_hal_timg/cmake_install.cmake	b849c01caa4705c8
+10	1898	1781204293950057616	build.ninja	b849c01caa4705c8
+10	1898	1781204293950057616	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/cmake_install.cmake	b849c01caa4705c8
+10	1898	1781204293950057616	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/cmake_install.cmake	b849c01caa4705c8
+10	1898	1781204293950057616	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/xtensa/cmake_install.cmake	b849c01caa4705c8
+10	1898	1781204293950057616	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_libc/cmake_install.cmake	b849c01caa4705c8
+10	1898	1781204293950057616	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/soc/cmake_install.cmake	b849c01caa4705c8
+10	1898	1781204293950057616	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/hal/cmake_install.cmake	b849c01caa4705c8
+10	1898	1781204293950057616	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_hal_gpio/cmake_install.cmake	b849c01caa4705c8
+10	1898	1781204293950057616	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_hal_usb/cmake_install.cmake	b849c01caa4705c8
+10	1898	1781204293950057616	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_hal_pmu/cmake_install.cmake	b849c01caa4705c8
+10	1898	1781204293950057616	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_hal_dma/cmake_install.cmake	b849c01caa4705c8
+10	1898	1781204293950057616	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_hal_gpspi/cmake_install.cmake	b849c01caa4705c8
+10	1898	1781204293950057616	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_hal_clock/cmake_install.cmake	b849c01caa4705c8
+10	1898	1781204293950057616	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_hal_mspi/cmake_install.cmake	b849c01caa4705c8
+10	1898	1781204293950057616	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_blockdev/cmake_install.cmake	b849c01caa4705c8
+10	1898	1781204293950057616	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/spi_flash/cmake_install.cmake	b849c01caa4705c8
+10	1898	1781204293950057616	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_bootloader_format/cmake_install.cmake	b849c01caa4705c8
+10	1898	1781204293950057616	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_app_format/cmake_install.cmake	b849c01caa4705c8
+10	1898	1781204293950057616	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/partition_table/cmake_install.cmake	b849c01caa4705c8
+10	1898	1781204293950057616	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esptool_py/cmake_install.cmake	b849c01caa4705c8
+10	1898	1781204293950057616	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/micro-ecc/cmake_install.cmake	b849c01caa4705c8
+10	1898	1781204293950057616	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_hal_timg/cmake_install.cmake	b849c01caa4705c8
+10	1898	1781204293950057616	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_hal_wdt/cmake_install.cmake	b849c01caa4705c8
+10	1898	1781204293950057616	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_hal_uart/cmake_install.cmake	b849c01caa4705c8
+10	1898	1781204293950057616	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_hal_ana_conv/cmake_install.cmake	b849c01caa4705c8
+10	1898	1781204293950057616	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_hal_rtc_timer/cmake_install.cmake	b849c01caa4705c8
+10	1898	1781204293950057616	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_hal_security/cmake_install.cmake	b849c01caa4705c8
+10	1898	1781204293950057616	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_security/cmake_install.cmake	b849c01caa4705c8
+10	1898	1781204293950057616	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/bootloader_support/cmake_install.cmake	b849c01caa4705c8
+10	1898	1781204293950057616	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/efuse/cmake_install.cmake	b849c01caa4705c8
+10	1898	1781204293950057616	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_system/cmake_install.cmake	b849c01caa4705c8
+10	1898	1781204293950057616	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_hw_support/cmake_install.cmake	b849c01caa4705c8
+10	1898	1781204293950057616	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_hw_support/port/esp32s3/cmake_install.cmake	b849c01caa4705c8
+10	1898	1781204293950057616	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_hw_support/mspi_timing_tuning/port/esp32s3/cmake_install.cmake	b849c01caa4705c8
+10	1898	1781204293950057616	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_hw_support/lowpower/cmake_install.cmake	b849c01caa4705c8
+10	1898	1781204293950057616	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_common/cmake_install.cmake	b849c01caa4705c8
+10	1898	1781204293950057616	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_rom/cmake_install.cmake	b849c01caa4705c8
+10	1898	1781204293950057616	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/log/cmake_install.cmake	b849c01caa4705c8
+10	1898	1781204293950057616	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/bootloader/cmake_install.cmake	b849c01caa4705c8
+10	1898	1781204293950057616	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/esp_stdio/cmake_install.cmake	b849c01caa4705c8
+10	1898	1781204293950057616	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/freertos/cmake_install.cmake	b849c01caa4705c8
+10	1898	1781204293950057616	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/esp-idf/main/cmake_install.cmake	b849c01caa4705c8
+4	33	1781204293961400263	CMakeFiles/bootloader_check_size	2ddc4ce1169b880f
+4	33	1781204293961400263	/Users/joris/Projects/PomoDesk/ESP IDF/blink/build/bootloader/CMakeFiles/bootloader_check_size	2ddc4ce1169b880f

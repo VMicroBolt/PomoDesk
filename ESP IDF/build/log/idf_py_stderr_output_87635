@@ -1,0 +1,20 @@
+Command: cmake -G Ninja -B /Users/joris/Projects/PomoDesk/ESP IDF/build -DPYTHON_DEPS_CHECKED=1 -DPYTHON=/Users/joris/.espressif/tools/python/v6.0.1/venv/bin/python3 -DESP_PLATFORM=1 -DIDF_TARGET=esp32s3 -DCCACHE_ENABLE=False /Users/joris/Projects/PomoDesk/ESP IDF
+Configuration Report               
+ ───────────────────────────────── 
+   Parser Version: 1               
+   Verbosity: default              
+   Defaults policy: sdkconfig      
+   Status: Finished successfully   
+                                   
+ ───────────────────────────────── 
+CMake Error at /Users/joris/.espressif/v6.0.1/esp-idf/components/xtensa/project_include.cmake:24 (message):
+  Internal error, toolchain has not been set correctly by project (or an
+  invalid CMakeCache.txt file has been generated somehow)
+Call Stack (most recent call first):
+  /Users/joris/.espressif/v6.0.1/esp-idf/tools/cmake/build.cmake:519 (include)
+  /Users/joris/.espressif/v6.0.1/esp-idf/tools/cmake/build.cmake:793 (__build_process_project_includes)
+  /Users/joris/.espressif/v6.0.1/esp-idf/tools/cmake/project.cmake:773 (idf_build_process)
+  blink/CMakeLists.txt:8 (project)
+  CMakeLists.txt:5 (include)
+
+

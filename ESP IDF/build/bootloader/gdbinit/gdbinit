@@ -1,0 +1,2 @@
+source /Users/joris/Projects/PomoDesk/ESP IDF/build/bootloader/gdbinit/symbols
+source /Users/joris/Projects/PomoDesk/ESP IDF/build/bootloader/gdbinit/connect

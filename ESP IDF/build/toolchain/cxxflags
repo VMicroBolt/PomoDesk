@@ -1,0 +1,6 @@
+-mlongcalls
+-fno-builtin-memcpy
+-fno-builtin-memset
+-fno-builtin-bzero
+"-specs=/Users/joris/Projects/PomoDesk/ESP IDF/build/specs/picolibc.specs"
+-fno-rtti

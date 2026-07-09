@@ -37,8 +37,9 @@ const uint32_t WORK_MS_DEFAULT     = 45UL * 60UL * 1000UL;
 const uint32_t BREAK_MS_DEFAULT    = 5UL  * 60UL * 1000UL;
 const uint32_t IDLE_LED_MS_DEFAULT = 10UL * 60UL * 1000UL;
 
-const uint32_t CONFIG_TIME_MS = 1200;
-const uint32_t OFF_TIME_MS    = 3000;
+const uint32_t CONFIG_TIME_MS  = 1500;
+const uint32_t RAINBOW_TIME_MS = 3000;
+const uint32_t OFF_TIME_MS     = 6000;
 
 const uint32_t DEFAULT_IDLE_RAW   = 0xFF5000;
 const uint32_t DEFAULT_WORK_RAW   = 0x00FF00;
@@ -69,6 +70,9 @@ State state = IDLE;
 
 uint32_t stateStartMs = 0;
 bool idleLedsOff = false;
+bool rainbowMode = false;
+uint8_t rainbowOffset = 0;
+uint32_t lastRainbowStepMs = 0;
 
 // --- Colors ---
 uint32_t COLOR_IDLE;
@@ -83,6 +87,8 @@ void stopConfigServer();
 void powerOffDevice();
 void handleExitConfig();
 void handleSleep();
+void startRainbowMode();
+void stopRainbowMode();
 
 // --- Helpers ---
 uint32_t rawToNeo(uint32_t raw) {
@@ -109,6 +115,22 @@ uint32_t hexToColor(String hex) {
 
 uint16_t transitionDelay() {
   return constrain(transitionDelayMs, 5, 500);
+}
+
+uint32_t wheel(uint8_t wheelPos) {
+  wheelPos = 255 - wheelPos;
+
+  if (wheelPos < 85) {
+    return strip.Color(255 - wheelPos * 3, 0, wheelPos * 3);
+  }
+
+  if (wheelPos < 170) {
+    wheelPos -= 85;
+    return strip.Color(0, wheelPos * 3, 255 - wheelPos * 3);
+  }
+
+  wheelPos -= 170;
+  return strip.Color(wheelPos * 3, 255 - wheelPos * 3, 0);
 }
 
 // --- LED functions ---
@@ -228,6 +250,25 @@ void applyTransition(uint32_t color) {
   }
 }
 
+void updateRainbowCycle() {
+  const uint32_t now = millis();
+
+  if (now - lastRainbowStepMs < 30) {
+    return;
+  }
+
+  lastRainbowStepMs = now;
+  strip.setBrightness(brightness);
+
+  for (int i = 0; i < NUM_LEDS; i++) {
+    uint8_t wheelPos = (i * 256 / NUM_LEDS + rainbowOffset) & 0xFF;
+    strip.setPixelColor(i, wheel(wheelPos));
+  }
+
+  strip.show();
+  rainbowOffset++;
+}
+
 // --- Settings ---
 void loadSettings() {
   prefs.begin("pomodesk", true);
@@ -287,6 +328,8 @@ void resetSettings() {
 // --- State logic ---
 void enterState(State s) {
   if (configMode) return;
+
+  rainbowMode = false;
 
   state = s;
   stateStartMs = millis();
@@ -839,6 +882,7 @@ void handleCaptivePortal() {
 
 // --- Config server control ---
 void startConfigServer() {
+  rainbowMode = false;
   configMode = true;
 
   WiFi.mode(WIFI_AP);
@@ -870,6 +914,26 @@ void stopConfigServer() {
   WiFi.mode(WIFI_OFF);
 
   configMode = false;
+  enterState(IDLE);
+}
+
+void startRainbowMode() {
+  if (configMode) {
+    stopConfigServer();
+  }
+
+  rainbowMode = true;
+  idleLedsOff = false;
+  lastRainbowStepMs = 0;
+}
+
+void stopRainbowMode() {
+  if (!rainbowMode) {
+    return;
+  }
+
+  rainbowMode = false;
+  rainbowOffset = 0;
   enterState(IDLE);
 }
 
@@ -935,17 +999,16 @@ void toggleConfigServer() {
 // --- Button ---
 struct Button {
   int pin;
-
+  
   bool lastRaw = HIGH;
   bool stable = HIGH;
 
   uint32_t lastChangeMs = 0;
   uint32_t pressStartMs = 0;
 
-  bool long15Done = false;
-  bool long3Done = false;
-
   static const uint32_t DEBOUNCE_MS = 30;
+
+  explicit Button(int pinNumber) : pin(pinNumber) {}
 
   void begin() {
     pinMode(pin, INPUT_PULLUP);
@@ -971,29 +1034,31 @@ struct Button {
 
       if (stable == LOW) {
         pressStartMs = millis();
-        long15Done = false;
-        long3Done = false;
       }
 
-      if (stable == HIGH) {
+      else {
         uint32_t held = millis() - pressStartMs;
 
-        if (held < CONFIG_TIME_MS && !configMode) {
+        if (held >= OFF_TIME_MS) {
+          powerOffDevice();
+        }
+        else if (held >= RAINBOW_TIME_MS) {
+          if (rainbowMode) {
+            stopRainbowMode();
+          }
+          else {
+            startRainbowMode();
+          }
+        }
+        else if (held >= CONFIG_TIME_MS) {
+          toggleConfigServer();
+        }
+        else if (rainbowMode) {
+          stopRainbowMode();
+        }
+        else if (!configMode) {
           nextState();
         }
-      }
-    }
-
-    if (stable == LOW) {
-      uint32_t held = millis() - pressStartMs;
-
-      if (held >= OFF_TIME_MS && !long3Done) {
-        long3Done = true;
-        powerOffDevice();
-      }
-      else if (held >= CONFIG_TIME_MS && !long15Done) {
-        long15Done = true;
-        toggleConfigServer();
       }
     }
   }
@@ -1035,6 +1100,11 @@ void loop() {
   if (configMode) {
     dnsServer.processNextRequest();
     server.handleClient();
+    return;
+  }
+
+  if (rainbowMode) {
+    updateRainbowCycle();
     return;
   }
 
